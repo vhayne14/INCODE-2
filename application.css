@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
+
+:root{
+
+    --font: 'Catamaran', sans-serif;
+    --bgColor: #f5f5f5;     /* This color represents the color of the main/body */
+    --themeColor: #6A7B8B;  /* This color represents the navigation bar and the footer */
+    --textColor: #EBF3F5;
+    --cardColor: #BAC2C8;
+    --subText: #5C5B5B;
+
+}
+
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+
+}
+
+body{
+
+    font-family: var(--font);
+    /* width: 100vw; */
+}
+
+main{
+    /* max-width: 1080px; */
+    margin: 0% 5% 0% 5%;
+}
+
+
+.nav-container{
+    background: var(--themeColor);
+    text-align: left;
+    z-index: 999;
+    display:flex;
+    justify-content:space-between;
+    padding: 1em 2.5rem;
+    align-items:center;
+    
+}
+
+.nav-container > nav{
+    /* display:none; */
+}
+.nav-container > label {
+    
+    flex-shrink:0;
+}
+
+
+
+.nav-container > nav  ul {
+    flex-basis: 500px;
+    list-style-type: none;
+    flex-grow: 1;
+    
+   
+}
+
+.nav-container > nav  ul  li{
+  
+    display:inline;
+    margin-left: 2rem;
+    font-weight: 550;
+    
+}
+
+.nav-toggle{
+    display: none;
+   
+}
+
+.nav-toggle-label{
+    /* position:absolute; */
+    
+    /* top: 0%;
+    margin-top: 2%;
+    left: 0;
+    margin-left: 1%;
+    margin-right: 2%; */
+    /* margin-left: 1em; */
+    /* border:1px solid red; */
+    height: 100%;
+    display:flex;
+    align-items: center; 
+    
+
+
+}
+/* .nav-container > ul{
+    flex-g
+} */
+
+.nav-container > nav ul li a{
+    text-decoration: none;
+    color:var(--textColor);
+    
+}
+
+
+
+
+.nav-logo{
+    width: 10rem;
+    
+}
+
+
+.nav-toggle:checked ~ nav{
+    display: block;
+
+}
+
+
+.iconLogo{
+ display: flex;
+ justify-content: center;
+ 
+}
+.iconLogoImg{
+    width: 13rem;
+}
+
+
+/*         testing */
+
+/* .hero-image{
+background-image: url("/assets/mr_coffee_salle.jpg");
+background-size: contain;
+background-repeat:no-repeat;
+padding: 0% 100% 75% 0%;
+
+}
+
+.hero-image h1{
+    position: absolute;
+    top: 50%;
+    left: 38%;
+    color: white;
+    text-shadow: 2px 2px 2px #000;
+    vertical-align: middle;
+
+}
+ */
+
+/*         testing */
+
+
+.main-text {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding-top: 5%;
+    /* You need to define an explicit height! */
+    height: 100vh;
+    background: url("/assets/mr_coffee_salle.jpg");
+    background-size: cover;
+
+  
+}
+
+.main-text h1{
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 4rem;
+    text-shadow: 1px 2px 1px #000;
+    color: white;
+    
+}
+
+
+
+.sub-text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom:5%;
+    font-size: 2rem;
+}
+
+.sub-text h1{
+    font-weight: 800;
+    color: var(--subText);
+}
+
+
+
+.cards-container{
+
+display:flex;
+
+/* align-items: center; */
+/* align-content:center; */
+justify-content:space-between;
+
+}
+
+.cards-container > div{
+    margin:1rem;
+}
+.card-content{
+    background-color:var(--cardColor);
+    padding: 5% 7% 5% 7%;
+    text-align:center;
+    font-size: 1rem;
+    color: white;
+    box-shadow: 1px 1px 2px 0px rgb(107, 106, 106);
+}
+.card-content p{
+    font-weight: 600;
+}
+
+.card-content h1{
+    text-shadow: 1px 2px 1px #000;
+}
+
+.card-img{
+    width: 10rem;
+    /* padding-top:5%;
+    padding-left:5%; */
+}
+
+
+/* @media screen and (min-width: 40em){
+    .card-content{
+        max-width: calc(50%-1em);
+    }
+
+}
+
+@media screen and (min-width: 60em){
+    .card-content{
+        max-width: calc(25%-1em);
+    }
+
+} */
+
+
+
+.button-text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom:5%;
+    
+}
+.button{
+    background-color: #6A7B8B;
+ 
+    border: none;
+    color: white;
+    border-radius: .5rem;
+    padding: 1rem 5rem;
+    font-weight: 600;
+    /* text-align: center; */
+    /* text-decoration: none; */
+    /* display: inline-block; */
+    /* font-size: 16px; */
+    /* margin: 4px 2px; */
+    /* cursor: pointer; */
+}
+
+
+
+
+
+/***** info container */
+
+.info-container{
+    display:flex;
+    justify-content: start;
+    align-content: center;
+    align-items: center;
+}
+.open-logo{
+    width:5rem;
+}
+
+
+.info-container h1{
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 2rem 0 0 3rem;
+    color: var(--subText);
+
+}
+
+
+
+.sub-info{
+    padding-top:5%;
+    font-size: 2rem;
+    display:flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    text-align:center;
+    color: var(--subText);
+}
+
+
+#sub1.sub-info{
+    font-size: 1.8rem;
+    
+}
+#sub2{
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+
+
+/* FOOTER ------------ */
+
+.footer-logo{
+    width: 4rem;
+}
+.footer-socials{
+    width: 2rem;
+}
+/* .nav-container{
+    background: var(--themeColor);
+    text-align: left;
+    z-index: 999;
+    display:flex;
+    justify-content:space-between;
+    padding: 1em 2.5rem;
+    align-items:center;
+    
+} */
+
+.footer-container{
+    background: var(--themeColor);
+    display:flex;
+    justify-content:space-between;
+    padding: 1em 2.5rem;
+    align-items:center;
+}
+
+.footer-container > div {
+    text-align: center;
+    font-weight: 600;
+    color: var(--textColor)
+
+}
+.footer-container > div > a{
+    margin-right: 1.5rem;
+}
+
