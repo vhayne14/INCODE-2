@@ -354,3 +354,75 @@ justify-content:space-between;
     margin-right: 1.5rem;
 }
 
+/* 
+.sub-info{
+    padding-top:5%;
+    font-size: 2rem;
+    display:flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    text-align:center;
+    color: var(--subText);
+}
+ */
+
+
+ /* contact page */
+
+ .contact-info{
+    display:flex;
+    justify-content: start;
+    align-content: left;
+    padding-left:32%;
+  
+ }
+ .contact-info p{
+    text-align: left;
+ }
+
+ .sub-info{
+    margin-bottom: 3rem;
+ }
+
+
+ /* about page */
+
+
+
+ .aboutContainer{
+    display:grid;
+    grid-template-columns: 55% 45%;
+
+ }
+ .aboutContent{
+     padding: 2rem;
+ }
+
+ .aboutImage{
+     width: 45rem;
+ }
+
+
+
+ .aboutContainer2{
+    display:grid;
+    grid-template-columns: 45% 55%;
+
+ }
+
+ .aboutContent h1{
+    
+    padding-top:3rem;
+    color: var(--subText);
+    font-weight: 4rem;
+    font-size: 3rem;
+
+ }
+
+ .aboutContent p{
+    padding-top:2rem;
+    font-size: 1.7rem;
+    color: var(--subText);
+    font-weight: bold;
+ }
