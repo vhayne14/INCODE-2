@@ -418,12 +418,12 @@ justify-content:space-between;
     display:flex;
     justify-content: center;
     align-items: center;
-
+    gap: 40px;
  }
 
 
 
- @media screen and (max-width : 1550px){
+ @media screen and (max-width : 1072px){
     .aboutContainer{
         flex-direction: column;
     }
@@ -431,30 +431,21 @@ justify-content:space-between;
 };
 
 
-
-
-
-
-.aboutImage{
-    width: 20rem;
-}
-
-.aboutContent img{
-    width: 30rem;
-}
-
-
- .aboutContent{
+.aboutContent{
     width: 35%;
  }
 
- .aboutImage{
-     /* width: 45rem; */
- }
+/* .aboutContent img{
+    width: 30em;
+}
 
+*/
 
+.aboutImage{
+     width: 30rem;
+ }  
 
-
+  
  .aboutContent h1{
     
     padding-top:3rem;
