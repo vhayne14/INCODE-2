@@ -210,8 +210,20 @@ justify-content:space-between;
     text-align:center;
     font-size: 1rem;
     color: white;
-    box-shadow: 1px 1px 2px 0px rgb(107, 106, 106);
+    box-shadow: 1px 
+    1px 2px 0px rgb(107, 106, 106);
 }
+
+
+@media screen and (max-width : 960px){
+    .cards-container{
+        flex-direction: column;
+    }
+
+};
+    
+
+
 .card-content p{
     font-weight: 600;
 }
@@ -391,25 +403,57 @@ justify-content:space-between;
 
 
  .aboutContainer{
-    display:grid;
+    /* --auto-grid-min-size: 30rem; */
+    /* display:grid;
     grid-template-columns: 55% 45%;
 
+
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr))
+    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr)); 
+     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 300px); 
+    grid doesnt count images
+    grid-gap: 1rem; */
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
  }
+
+
+
+ @media screen and (max-width : 1550px){
+    .aboutContainer{
+        flex-direction: column;
+    }
+
+};
+
+
+
+
+
+
+.aboutImage{
+    width: 20rem;
+}
+
+.aboutContent img{
+    width: 30rem;
+}
+
+
  .aboutContent{
-     padding: 2rem;
+    width: 35%;
  }
 
  .aboutImage{
-     width: 45rem;
+     /* width: 45rem; */
  }
 
 
 
- .aboutContainer2{
-    display:grid;
-    grid-template-columns: 45% 55%;
-
- }
 
  .aboutContent h1{
     
@@ -421,8 +465,10 @@ justify-content:space-between;
  }
 
  .aboutContent p{
-    padding-top:2rem;
-    font-size: 1.7rem;
+    padding-top: .5rem;
+    
+    font-size: 1rem;
+    
     color: var(--subText);
-    font-weight: bold;
+    font-weight: bold; 
  }
