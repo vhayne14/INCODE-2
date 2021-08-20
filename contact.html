@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="application.css" rel="stylesheet" href="text/css">
+    <script src= "form.js" defer></script>
     
 </head>
 <body>
@@ -41,9 +42,82 @@
 
     </div>
 
+    <div class="sub-text">
+        <h1>Dites nous tout !</h1>
+        
+    </div>
     <main>
+
+        <!--    FORM SECTION        -->
+        <div class="contactForm">
+          <form>
+            Nom *<br>
+            <input type="text" name="nom">
+            <br> Prénom *<br>
+            <input type="text" name="prenom">
+            <br>Téléphone *<br>
+            <input type="text" name="telephone">
+            <br>Adresse mail *<br>
+            <input type="text" name="email">
+            <br>Message *<br>
+            <textarea id="message" type="submit" name="message" placeholder="Tapez votre message ici"></textarea>
+       
+            <input id="myBtn" type="submit" value="Submit" style="visibility:hidden;">
+          </form>  
+          
+
+
+
+
+
+<!-- The Modal -->
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                <!-- <span class="close">&times;</span> -->
+
+                <div class="popUpHeading">
+                    <img class="iconLogoImgPopUp" src="/assets/logo_dark.png" alt="An Image of MR. Coffee's logo">
+                    <h1>MERCI<br>Votre message a bien été envoyé !</h1>
+                    <!-- <img class="iconLogoImg" src="/" alt="An Image of MR. Coffee's logo" style="visibility:hidden;"> -->
+                    <span class="iconLogoImg"></span>
+                    <!-- The above span element received the iconLogoImg class to server as a work around for flexbox: space between -->
+                    <!-- There may be a better way to this, this only serves as a quick workaround. -->
+
+                </div>
+                
+                <div class="popUpText">
+
+                    <p>Nous essaierons d’y répondre au mieux dans les plus brefs délais. À bientot chez Mr.Coffee</p>
+                    
+                </div>
+
+                <div class="close">
+                   <button id= "popUpClose" class="button">FERMER</button> 
+                </div>
+                    
+                
+                </div>
+            
+            </div>
+            
+
+                    
+
+        </div>
+
+        <!-- <button id="myBtn">Open Modal</button> -->
+
+
+                   
+
+        </div>
+        
+
         <div class="sub-text">
             <h1>On vous attend !</h1>
+            
         </div>
 
         <div class="contact-info">
@@ -54,7 +128,7 @@
             <p>Tel: +33 9 46 25 78 45<br>Mail: contact@mr-coffee.com</p>
             
         </div>
-        <div class="sub-info">
+        <div class="sub-map">
             <!-- <img src="/assets/carte_contact.png" alt=""> -->
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.124709480616!2d2.318581415673599!3d48.83675987928532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671b5590a00b1%3A0x2711ee015c1c2b2e!2s15%20Rue%20Jules%20Guesde%2C%2075014%20Paris%2C%20France!5e0!3m2!1sen!2sau!4v1628817862624!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
