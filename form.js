@@ -105,7 +105,7 @@ function submitForm(e){
     else if(
       inputValidator(validName, firstName)==true &&
       inputValidator(validName, lastName)==false &&
-      inputValidator(validEmail, email)==false&&
+      inputValidator(validEmail, email)==false &&
       inputValidator(validMsg, message)==true
     ){
       console.log("Please check your prenom. Please don't include special characters");
@@ -144,8 +144,6 @@ function inputValidator(regex, input){
 popUpClose.onclick = function() {
   modal.style.display = "none";
 
-  // document.body.style.overflow = "scroll"; // ADD THIS LINE
-  // document.body.style.height = "auto"; // ADD THIS LINE
 }
 
 
@@ -153,6 +151,7 @@ popUpClose.onclick = function() {
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
+    
     // document.body.style.overflow = "scroll"; // ADD THIS LINE
     // document.body.style.height = "auto"; // ADD THIS LINE
   }
