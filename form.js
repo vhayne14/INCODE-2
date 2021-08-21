@@ -111,6 +111,18 @@ function submitForm(e){
       console.log("Please check your prenom. Please don't include special characters");
       console.log("Please check your email address and try again");
     }
+    else if(
+      inputValidator(validName, firstName)==true &&
+      inputValidator(validName, lastName)==true &&
+      inputValidator(validEmail, email)==true &&
+      inputValidator(validMsg, message)==false
+    ){
+
+      console.log("Your message should not exceed 200 characters. Please try again");
+    }
+    else{
+      console.log("An error has occured. Please double check your inputs and try again");
+    }
       
     }
 
