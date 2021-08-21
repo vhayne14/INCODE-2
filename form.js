@@ -144,6 +144,8 @@ function inputValidator(regex, input){
 popUpClose.onclick = function() {
   modal.style.display = "none";
 
+    // document.body.style.overflow = "scroll"; // ADD THIS LINE
+    // document.body.style.height = "auto"; // ADD THIS LINE
 }
 
 
@@ -151,7 +153,7 @@ popUpClose.onclick = function() {
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
-    
+
     // document.body.style.overflow = "scroll"; // ADD THIS LINE
     // document.body.style.height = "auto"; // ADD THIS LINE
   }
